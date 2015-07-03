@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "ZeroLeak 0.1",
+  "description": "ZeroLeak",
+  "version": "0.1",
+  "author": "md5_salt",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
