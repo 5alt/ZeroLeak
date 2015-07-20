@@ -26,7 +26,7 @@ package_ext = new Array('.rar', '.zip', '.tar', '.tar.gz')
 backup_filename = new Array('web', 'wwwroot', window.location.hostname)
 recursive_check_list = new Array('.svn/entries', '.git/config', 'robots.txt', '.DS_Store')
 
-urls = Array()
+urls = Array('/server-status')
 
 for(p in package_ext){
   for(b in backup_filename){
