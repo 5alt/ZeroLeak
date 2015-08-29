@@ -22,11 +22,11 @@ function isEffective(url) {
 path = window.location.pathname
 base_url = window.location.href.slice(0,window.location.href.indexOf(window.location.hostname)+window.location.hostname.length) + '/'
 
-package_ext = new Array('.rar', '.zip', '.tar', '.tar.gz')
+package_ext = new Array('.rar', '.zip', '.tar', '.tar.gz', '.tgz')
 backup_filename = new Array('web', 'wwwroot', window.location.hostname)
 recursive_check_list = new Array('.svn/entries', '.git/config', 'robots.txt', '.DS_Store')
 
-urls = Array('/server-status')
+urls = Array('/server-status', '/jmx-console/', '/sub/.%252e/jmx-console')
 
 for(p in package_ext){
   for(b in backup_filename){
